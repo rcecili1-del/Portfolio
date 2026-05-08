@@ -1,312 +1,799 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
 
-<!-- WEEK 2 -->
-<div class="article-card">
-  <h2>Week 2 Digest</h2>
-  <span class="topic">No Specific Topic</span>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <p>
-    Weekly presentation discussing public perception of AI and its impact on society.
-  </p>
+  <title>Weekly Articles | Construction AI Portfolio</title>
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week 2 Ai Digest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+  <style>
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/zYCs7Z7xIM8"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
 
-<!-- WEEK 3 -->
-<div class="article-card">
-  <h2>Week 3 Digest</h2>
-  <span class="topic">AGI</span>
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f4f1ec;
+      color:#1d1d1d;
+      line-height:1.6;
+    }
 
-  <p>
-    Presentation discussing AGI development and emerging AI meta-systems.
-  </p>
+    /* NAVIGATION */
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%203%20Ai%20Digest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+    nav{
+      background:#0f2437;
+      border-bottom:4px solid #f58220;
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/yyZzsRgrJHn"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+      padding:20px 8%;
 
-<!-- WEEK 5 -->
-<div class="article-card">
-  <h2>Week 5 Digest</h2>
-  <span class="topic">ASI</span>
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
 
-  <p>
-    Presentation focused on global AI governance and superintelligence concerns.
-  </p>
+    .logo{
+      color:white;
+      font-size:1.4rem;
+      font-weight:bold;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    }
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%205%20AI%20Digest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:25px;
+    }
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/FJMjni2hyx8"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
 
-<!-- WEEK 6 -->
-<div class="article-card">
-  <h2>Week 6 Digest</h2>
-  <span class="topic">AI Apps and Tools for AEC/FM</span>
+    nav a:hover{
+      color:#f58220;
+    }
 
-  <p>
-    Presentation covering AI applications in building operations and facilities management.
-  </p>
+    /* HERO */
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%206%20AI%20DIgest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+    .hero{
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/VCI7iqPsIo-"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+      background:
+      linear-gradient(rgba(15,36,55,0.82), rgba(15,36,55,0.82)),
+      url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80");
 
-<!-- WEEK 7 -->
-<div class="article-card">
-  <h2>Week 7 Digest</h2>
-  <span class="topic">BIM / Engineering Tools</span>
+      background-size:cover;
+      background-position:center;
 
-  <p>
-    Presentation discussing BIM engineering technologies and AI integration.
-  </p>
+      padding:110px 8%;
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%207%20AI%20Digest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+      color:white;
+      text-align:center;
+    }
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/82O3z_ArOol"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+    .hero h1{
+      font-size:3rem;
+      margin-bottom:15px;
+    }
 
-<!-- WEEK 8 -->
-<div class="article-card">
-  <h2>Week 8 Digest</h2>
-  <span class="topic">AI Agents</span>
+    .hero p{
+      max-width:850px;
+      margin:auto;
+      color:#e3eaf0;
+      font-size:1.1rem;
+    }
 
-  <p>
-    Presentation exploring AI agents and enterprise automation workflows.
-  </p>
+    /* MAIN SECTION */
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%208%20AI%20Digest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+    section{
+      padding:70px 8%;
+    }
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/ciTPsfXX_y4"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+    .section-title{
+      font-size:2rem;
+      color:#0f2437;
 
-<!-- WEEK 10 -->
-<div class="article-card">
-  <h2>Week 10 Digest</h2>
-  <span class="topic">Vibe Coding</span>
+      margin-bottom:20px;
 
-  <p>
-    Presentation discussing AI-assisted coding and natural language software development.
-  </p>
+      border-left:6px solid #f58220;
+      padding-left:15px;
+    }
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%2010%20AI%20Digest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+    .intro{
+      max-width:900px;
+      color:#52616b;
+      margin-bottom:40px;
+    }
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/YIc5oB7OFvN"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+    /* ARTICLE GRID */
 
-<!-- WEEK 11 -->
-<div class="article-card">
-  <h2>Week 11 Digest</h2>
-  <span class="topic">Societal AI Impact</span>
+    .articles-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+      gap:30px;
+    }
 
-  <p>
-    Presentation discussing governance and societal impacts of AI agents.
-  </p>
+    .article-card{
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%2011%20AI%20Digest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+      background:white;
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/E4qmUa4u1RG"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+      padding:30px;
 
-<!-- WEEK 12 -->
-<div class="article-card">
-  <h2>Week 12 Digest</h2>
-  <span class="topic">Government Policy & Rules</span>
+      border-radius:10px;
 
-  <p>
-    Presentation discussing cybersecurity risks and AI regulation.
-  </p>
+      border-top:5px solid #f58220;
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%2012%20AI%20DIgest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/UCtG5qPfzHu"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+      transition:0.3s;
+    }
 
-<!-- WEEK 13 -->
-<div class="article-card">
-  <h2>Week 13 Digest</h2>
-  <span class="topic">Procurement and Supply Chain</span>
+    .article-card:hover{
+      transform:translateY(-5px);
+    }
 
-  <p>
-    Presentation discussing AI in procurement and supply chain decision-making.
-  </p>
+    .article-card h2{
+      color:#0f2437;
+      margin-bottom:10px;
+    }
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%2013%20AI%20DIgest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+    .topic{
+      display:inline-block;
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/VBofRG8ymgS"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+      background:#d9e2e8;
 
-<!-- WEEK 14 -->
-<div class="article-card">
-  <h2>Week 14 Digest</h2>
-  <span class="topic">Social Media and AI</span>
+      color:#0f2437;
 
-  <p>
-    Presentation discussing AI-generated content and online authenticity.
-  </p>
+      padding:8px 14px;
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%2014%20AI%20Digest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+      border-radius:20px;
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/pQzJEtXV-5i"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+      font-size:0.85rem;
+      font-weight:bold;
 
-<!-- WEEK 15 -->
-<div class="article-card">
-  <h2>Week 15 Digest</h2>
-  <span class="topic">Higher Education</span>
+      margin-bottom:18px;
+    }
 
-  <p>
-    Presentation discussing AI adoption and uncertainty in higher education.
-  </p>
+    .article-card p{
+      color:#52616b;
+      margin-bottom:20px;
+    }
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%2015%20AI%20Digest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+    .links{
+      display:flex;
+      flex-direction:column;
+      gap:12px;
+    }
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/ZkF1JWMYLDe"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+    .btn{
 
-<!-- WEEK 16 -->
-<div class="article-card">
-  <h2>Week 16 Digest</h2>
-  <span class="topic">AI Voices (Sutskever & Hassabis)</span>
+      display:inline-block;
 
-  <p>
-    Presentation discussing AGI predictions and perspectives from leading AI researchers.
-  </p>
+      padding:12px 18px;
 
-  <div class="links">
-    <a class="btn secondary"
-       href="Week%2016%20AI%20Digest.pdf"
-       target="_blank">
-       View PDF Presentation
-    </a>
+      border-radius:6px;
 
-    <a class="btn"
-       href="https://ai.invideo.io/watch/VJIMteiFtZY"
-       target="_blank">
-       Watch Interactive Video
-    </a>
-  </div>
-</div>
+      text-decoration:none;
+
+      font-weight:bold;
+
+      text-align:center;
+
+      transition:0.3s;
+    }
+
+    .btn.pdf{
+      background:#0f2437;
+      color:white;
+    }
+
+    .btn.pdf:hover{
+      background:#1d3b57;
+    }
+
+    .btn.video{
+      background:#f58220;
+      color:white;
+    }
+
+    .btn.video:hover{
+      background:#d86c12;
+    }
+
+    /* FOOTER */
+
+    footer{
+      background:#091622;
+      color:white;
+      text-align:center;
+      padding:30px 8%;
+      border-top:4px solid #f58220;
+    }
+
+    footer p{
+      color:#dbe3ea;
+      margin-bottom:8px;
+    }
+
+    /* MOBILE */
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero h1{
+        font-size:2.3rem;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- NAVIGATION -->
+
+  <nav>
+
+    <div class="logo">
+      Construction AI Portfolio
+    </div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="weekly-articles.html">Weekly Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+  </nav>
+
+  <!-- HERO -->
+
+  <header class="hero">
+
+    <h1>
+      Weekly Articles
+    </h1>
+
+    <p>
+      Weekly article presentations and interactive videos
+      completed throughout the AI in Construction and
+      Facilities Management course.
+    </p>
+
+  </header>
+
+  <!-- MAIN SECTION -->
+
+  <section>
+
+    <h2 class="section-title">
+      Weekly Article Presentations
+    </h2>
+
+    <p class="intro">
+      Each weekly article includes a presentation PDF
+      and a paired interactive video presentation.
+    </p>
+
+    <div class="articles-grid">
+
+      <!-- WEEK 2 -->
+
+      <div class="article-card">
+
+        <h2>Week 2 Digest</h2>
+
+        <span class="topic">
+          No Specific Topic
+        </span>
+
+        <p>
+          Weekly presentation discussing public perception
+          of AI and its impact on society.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 2 Ai Digest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/zYCs7Z7xIM8"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 3 -->
+
+      <div class="article-card">
+
+        <h2>Week 3 Digest</h2>
+
+        <span class="topic">
+          AGI
+        </span>
+
+        <p>
+          Presentation discussing AGI development
+          and emerging AI meta-systems.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 3 Ai Digest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/yyZzsRgrJHn"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 5 -->
+
+      <div class="article-card">
+
+        <h2>Week 5 Digest</h2>
+
+        <span class="topic">
+          ASI
+        </span>
+
+        <p>
+          Presentation focused on global AI governance
+          and superintelligence concerns.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 5 AI Digest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/FJMjni2hyx8"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 6 -->
+
+      <div class="article-card">
+
+        <h2>Week 6 Digest</h2>
+
+        <span class="topic">
+          AI Apps and Tools for AEC/FM
+        </span>
+
+        <p>
+          Presentation covering AI applications
+          in building operations and facilities management.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 6 AI DIgest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/VCI7iqPsIo-"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 7 -->
+
+      <div class="article-card">
+
+        <h2>Week 7 Digest</h2>
+
+        <span class="topic">
+          BIM / Engineering Tools
+        </span>
+
+        <p>
+          Presentation discussing BIM engineering
+          technologies and AI integration.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 7 AI Digest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/82O3z_ArOol"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 8 -->
+
+      <div class="article-card">
+
+        <h2>Week 8 Digest</h2>
+
+        <span class="topic">
+          AI Agents
+        </span>
+
+        <p>
+          Presentation exploring AI agents
+          and enterprise automation workflows.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 8 AI Digest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/ciTPsfXX_y4"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 10 -->
+
+      <div class="article-card">
+
+        <h2>Week 10 Digest</h2>
+
+        <span class="topic">
+          Vibe Coding
+        </span>
+
+        <p>
+          Presentation discussing AI-assisted coding
+          and natural language software development.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 10 AI Digest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/YIc5oB7OFvN"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 11 -->
+
+      <div class="article-card">
+
+        <h2>Week 11 Digest</h2>
+
+        <span class="topic">
+          Societal AI Impact
+        </span>
+
+        <p>
+          Presentation discussing governance
+          and societal impacts of AI agents.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 11 AI Digest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/E4qmUa4u1RG"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 12 -->
+
+      <div class="article-card">
+
+        <h2>Week 12 Digest</h2>
+
+        <span class="topic">
+          Government Policy & Rules
+        </span>
+
+        <p>
+          Presentation discussing cybersecurity
+          risks and AI regulation.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 12 AI DIgest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/UCtG5qPfzHu"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 13 -->
+
+      <div class="article-card">
+
+        <h2>Week 13 Digest</h2>
+
+        <span class="topic">
+          Procurement and Supply Chain
+        </span>
+
+        <p>
+          Presentation discussing AI in procurement
+          and supply chain decision-making.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 13 AI DIgest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/VBofRG8ymgS"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 14 -->
+
+      <div class="article-card">
+
+        <h2>Week 14 Digest</h2>
+
+        <span class="topic">
+          Social Media and AI
+        </span>
+
+        <p>
+          Presentation discussing AI-generated content
+          and online authenticity.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 14 AI Digest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/pQzJEtXV-5i"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 15 -->
+
+      <div class="article-card">
+
+        <h2>Week 15 Digest</h2>
+
+        <span class="topic">
+          Higher Education
+        </span>
+
+        <p>
+          Presentation discussing AI adoption
+          and uncertainty in higher education.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 15 AI Digest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/ZkF1JWMYLDe"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+      <!-- WEEK 16 -->
+
+      <div class="article-card">
+
+        <h2>Week 16 Digest</h2>
+
+        <span class="topic">
+          AI Voices (Sutskever & Hassabis)
+        </span>
+
+        <p>
+          Presentation discussing AGI predictions
+          and perspectives from leading AI researchers.
+        </p>
+
+        <div class="links">
+
+          <a class="btn pdf"
+             href="Week 16 AI Digest.pdf"
+             target="_blank">
+
+             View PDF Presentation
+
+          </a>
+
+          <a class="btn video"
+             href="https://ai.invideo.io/watch/VJIMteiFtZY"
+             target="_blank">
+
+             Watch Interactive Video
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- FOOTER -->
+
+  <footer>
+
+    <p>
+      © 2026 Construction AI Portfolio
+    </p>
+
+    <p>
+      Weekly Articles Page
+    </p>
+
+  </footer>
+
+</body>
+</html>
