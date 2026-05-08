@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>About Me | Construction AI Portfolio</title>
 
   <style>
@@ -17,13 +19,17 @@
       font-family: Arial, Helvetica, sans-serif;
       background:#f4f1ec;
       color:#1d1d1d;
-      line-height:1.6;
+      line-height:1.7;
     }
+
+    /* NAVIGATION */
 
     nav{
       background:#0f2437;
       border-bottom:4px solid #f58220;
+
       padding:20px 8%;
+
       display:flex;
       justify-content:space-between;
       align-items:center;
@@ -43,18 +49,21 @@
       gap:25px;
     }
 
-    nav a{
+    nav ul li a{
       color:white;
       text-decoration:none;
       font-weight:bold;
       transition:0.3s;
     }
 
-    nav a:hover{
+    nav ul li a:hover{
       color:#f58220;
     }
 
+    /* HERO */
+
     .hero{
+
       background:
       linear-gradient(rgba(15,36,55,0.82), rgba(15,36,55,0.82)),
       url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80");
@@ -62,8 +71,10 @@
       background-size:cover;
       background-position:center;
 
-      padding:100px 8%;
+      padding:110px 8%;
+
       color:white;
+      text-align:center;
     }
 
     .hero h1{
@@ -72,10 +83,13 @@
     }
 
     .hero p{
-      max-width:800px;
-      color:#e4eaf0;
+      max-width:850px;
+      margin:auto;
+      color:#e3eaf0;
       font-size:1.1rem;
     }
+
+    /* MAIN SECTION */
 
     section{
       padding:70px 8%;
@@ -84,50 +98,92 @@
     .section-title{
       font-size:2rem;
       color:#0f2437;
-      margin-bottom:25px;
+      margin-bottom:30px;
+
       border-left:6px solid #f58220;
       padding-left:15px;
     }
 
     .about-container{
       display:grid;
-      grid-template-columns:1fr 1fr;
-      gap:30px;
+      grid-template-columns:350px 1fr;
+      gap:40px;
+      align-items:start;
     }
 
-    .card{
+    .profile-card{
+
       background:white;
-      padding:30px;
-      border-radius:8px;
+
+      padding:25px;
+
+      border-radius:10px;
+
       border-top:5px solid #f58220;
+
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+      text-align:center;
+    }
+
+    .profile-card img{
+      width:100%;
+      border-radius:10px;
+      margin-bottom:20px;
+    }
+
+    .profile-card h2{
+      color:#0f2437;
+      margin-bottom:10px;
+    }
+
+    .profile-card p{
+      color:#52616b;
+    }
+
+    .content-card{
+
+      background:white;
+
+      padding:35px;
+
+      border-radius:10px;
+
+      border-top:5px solid #f58220;
+
       box-shadow:0 6px 18px rgba(0,0,0,0.08);
     }
 
-    .card h2{
+    .content-card h2{
       color:#0f2437;
-      margin-bottom:15px;
+      margin-bottom:18px;
     }
 
-    .card p{
+    .content-card p{
       color:#52616b;
-      margin-bottom:15px;
+      margin-bottom:20px;
     }
 
     .skills{
-      margin-top:15px;
       display:flex;
       flex-wrap:wrap;
-      gap:10px;
+      gap:12px;
+      margin-top:20px;
     }
 
     .tag{
       background:#d9e2e8;
       color:#0f2437;
+
       padding:8px 14px;
+
       border-radius:20px;
+
       font-size:0.85rem;
       font-weight:bold;
     }
+
+    /* FOOTER */
 
     footer{
       background:#091622;
@@ -138,9 +194,11 @@
     }
 
     footer p{
-      margin-bottom:8px;
       color:#dbe3ea;
+      margin-bottom:8px;
     }
+
+    /* MOBILE */
 
     @media(max-width:900px){
 
@@ -169,9 +227,12 @@
     }
 
   </style>
+
 </head>
 
 <body>
+
+  <!-- NAVIGATION -->
 
   <nav>
 
@@ -188,19 +249,21 @@
 
   </nav>
 
+  <!-- HERO -->
+
   <header class="hero">
 
-    <h1>About Me</h1>
+    <h1>
+      About Me
+    </h1>
 
     <p>
-      This page introduces my background,
-      professional interests, and focus
-      in construction technology,
-      BIM/VDC workflows, artificial intelligence,
-      and facilities management.
+      BIM/VDC Professional • Construction Technology • AI in AEC/FM
     </p>
 
   </header>
+
+  <!-- ABOUT SECTION -->
 
   <section>
 
@@ -210,95 +273,101 @@
 
     <div class="about-container">
 
-      <div class="card">
+      <!-- PROFILE -->
 
-        <h2>Who I Am</h2>
+      <div class="profile-card">
+
+        <img src="ROBE.jfif" alt="Profile Picture">
+
+        <h2>
+          Robert Campos
+        </h2>
 
         <p>
-          I am a student and construction technology professional
-          with an interest in how digital tools can improve
-          planning, coordination, and project delivery
-          within the construction industry.
-        </p>
-
-        <p>
-          This portfolio was created for my
-          AI in Construction and Facilities Management course
-          and highlights projects, article summaries,
-          and research completed throughout the semester.
+          BIM/VDC Professional
         </p>
 
       </div>
 
-      <div class="card">
+      <!-- CONTENT -->
 
-        <h2>Professional Interests</h2>
+      <div class="content-card">
+
+        <h2>
+          Introduction
+        </h2>
 
         <p>
-          My interests include BIM coordination,
-          VDC workflows, construction technology,
-          project management, and the use of AI
-          to improve efficiency and communication.
+          I have 9 years of experience in the BIM/VDC industry
+          and I am currently enrolled in the Master of Science
+          in Construction and Facilities Engineering program
+          at UNC Charlotte.
         </p>
 
         <p>
-          I am especially interested in how artificial intelligence
-          can support construction teams through automation,
-          data analysis, scheduling assistance,
-          and digital project delivery.
+          I work with project teams to turn design intent
+          into coordinated building systems using BIM
+          that support construction,
+          commissioning,
+          and long-term facility performance
+          in complex environments
+          such as process piping
+          and highly coordinated MEP systems.
         </p>
 
-      </div>
+        <p>
+          My experience spans pharmaceutical,
+          healthcare,
+          manufacturing,
+          mission critical,
+          education,
+          multifamily,
+          and public-sector projects,
+          where I take a systems-driven,
+          collaborative approach focused on clarity,
+          reliable information,
+          and data-rich models
+          that support installation,
+          turnover,
+          and long-term facility use.
+        </p>
 
-      <div class="card">
-
-        <h2>Skills & Focus Areas</h2>
+        <h2>
+          Professional Interests
+        </h2>
 
         <p>
-          The following topics represent the main focus areas
-          highlighted throughout this course and portfolio.
+          My professional interests focus on BIM/VDC workflows,
+          construction technology,
+          artificial intelligence,
+          and digital project delivery within the AEC industry.
+          I am especially interested in how AI can support coordination,
+          estimating,
+          project management,
+          and data-driven decision-making
+          to improve construction efficiency
+          and long-term facility operations.
         </p>
 
         <div class="skills">
 
           <span class="tag">BIM</span>
           <span class="tag">VDC</span>
-          <span class="tag">AI</span>
-          <span class="tag">Construction Technology</span>
+          <span class="tag">AI in Construction</span>
+          <span class="tag">MEP Coordination</span>
           <span class="tag">Facilities Management</span>
-          <span class="tag">Project Coordination</span>
+          <span class="tag">Construction Technology</span>
           <span class="tag">Digital Delivery</span>
 
         </div>
 
       </div>
 
-      <div class="card">
-
-        <h2>Course Connection</h2>
-
-        <p>
-          Throughout this course,
-          I explored how artificial intelligence
-          is impacting construction,
-          facilities management,
-          higher education,
-          and digital communication.
-        </p>
-
-        <p>
-          The assignments completed during the semester
-          helped strengthen my understanding
-          of emerging technology trends
-          and how AI may influence
-          the future of the construction industry.
-        </p>
-
-      </div>
-
     </div>
 
   </section>
+
+  <!-- FOOTER -->
 
   <footer>
 
