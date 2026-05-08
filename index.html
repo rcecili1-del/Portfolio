@@ -1,36 +1,284 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Construction AI Portfolio</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f4f1ec;
+      color:#1d1d1d;
+      line-height:1.6;
+    }
+
+    nav{
+      background:#0f2437;
+      border-bottom:4px solid #f58220;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:white;
+      font-size:1.4rem;
+      font-weight:bold;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:25px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#f58220;
+    }
+
+    .hero{
+      background:
+      linear-gradient(rgba(15,36,55,0.82), rgba(15,36,55,0.82)),
+      url("https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=1600&q=80");
+
+      background-size:cover;
+      background-position:center;
+
+      min-height:75vh;
+
+      display:flex;
+      align-items:center;
+
+      padding:0 8%;
+
+      color:white;
+    }
+
+    .hero-content{
+      max-width:700px;
+    }
+
+    .hero h1{
+      font-size:3.4rem;
+      line-height:1.1;
+      margin-bottom:20px;
+    }
+
+    .hero p{
+      font-size:1.15rem;
+      margin-bottom:30px;
+      color:#e4eaf0;
+    }
+
+    .btn{
+      display:inline-block;
+      background:#f58220;
+      color:white;
+      padding:14px 28px;
+      text-decoration:none;
+      font-weight:bold;
+      border-radius:4px;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:#d86c12;
+    }
+
+    section{
+      padding:70px 8%;
+    }
+
+    .section-title{
+      font-size:2rem;
+      color:#0f2437;
+      margin-bottom:15px;
+      border-left:6px solid #f58220;
+      padding-left:15px;
+    }
+
+    .intro{
+      color:#52616b;
+      max-width:850px;
+      margin-bottom:40px;
+    }
+
+    .grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(260px,1fr));
+      gap:25px;
+    }
+
+    .card{
+      background:white;
+      padding:28px;
+      border-radius:8px;
+      border-top:5px solid #f58220;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .card h3{
+      color:#0f2437;
+      margin-bottom:12px;
+    }
+
+    .card p{
+      color:#52616b;
+    }
+
+    footer{
+      background:#091622;
+      color:white;
+      text-align:center;
+      padding:30px 8%;
+      border-top:4px solid #f58220;
+    }
+
+    footer p{
+      margin-bottom:8px;
+      color:#dbe3ea;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero{
+        padding-top:60px;
+        padding-bottom:60px;
+      }
+
+      .hero h1{
+        font-size:2.3rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Construction AI Portfolio</div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="weekly-articles.html">Weekly Articles</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+
+    <div class="hero-content">
+
+      <h1>
+        AI in Construction & Facilities Management
+      </h1>
+
       <p>
-        This portfolio highlights my semester projects, weekly article summaries, and course assignments focused on how artificial intelligence is changing construction, BIM/VDC, and facilities management.
+        This portfolio highlights my semester projects,
+        weekly article summaries, and course assignments
+        focused on how artificial intelligence is changing
+        construction, BIM/VDC, and facilities management.
       </p>
-      <a href="projects.html" class="btn">View My Projects</a>
+
+      <a href="projects.html" class="btn">
+        View My Projects
+      </a>
+
     </div>
+
   </header>
 
   <section>
-    <h2 class="section-title">Portfolio Overview</h2>
+
+    <h2 class="section-title">
+      Portfolio Overview
+    </h2>
+
     <p class="intro">
-      This website is organized into three main sections: About Me, Projects, and Weekly Articles. Each page provides a clear summary of my course work and how it connects to AI in the construction and facilities management industry.
+      This website is organized into three main sections:
+      About Me, Projects, and Weekly Articles.
+      Each page provides a clear summary of my course work
+      and how it connects to AI in the construction
+      and facilities management industry.
     </p>
 
     <div class="grid">
+
       <div class="card">
         <h3>About Me</h3>
-        <p>Learn more about my background, professional interests, and connection to construction technology.</p>
+
+        <p>
+          Learn more about my background,
+          professional interests,
+          and connection to construction technology.
+        </p>
       </div>
+
       <div class="card">
         <h3>Projects</h3>
-        <p>View summaries of the major assignments and projects completed throughout the semester.</p>
+
+        <p>
+          View summaries of the major assignments
+          and projects completed throughout the semester.
+        </p>
       </div>
+
       <div class="card">
         <h3>Weekly Articles</h3>
-        <p>Read weekly summaries of articles related to AI, construction, education, technology, and the future of work.</p>
+
+        <p>
+          Read weekly summaries of articles related to AI,
+          construction, education, technology,
+          and the future of work.
+        </p>
       </div>
+
     </div>
+
   </section>
 
   <footer>
-    <p>&copy; 2026 Construction AI Portfolio</p>
-    <p>AI in Construction & Facilities Management Course Website</p>
+
+    <p>
+      © 2026 Construction AI Portfolio
+    </p>
+
+    <p>
+      AI in Construction & Facilities Management Course Website
+    </p>
+
   </footer>
+
 </body>
 </html>
