@@ -1,6 +1,6 @@
+
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
 
   <meta charset="UTF-8">
@@ -9,222 +9,166 @@
   <title>Weekly Articles | Construction AI Portfolio</title>
 
   <style>
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
     }
 
-    body {
+    body{
       font-family: Arial, Helvetica, sans-serif;
-      background-color: #f4f1ec;
-      color: #1d1d1d;
-      line-height: 1.6;
+      background:#f4f1ec;
+      color:#1d1d1d;
+      line-height:1.6;
     }
 
-    /* NAVBAR */
-
-    nav {
-      background-color: #0f2437;
-      border-bottom: 4px solid #f58220;
-
-      padding: 20px 8%;
-
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    nav{
+      background:#0f2437;
+      border-bottom:4px solid #f58220;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
     }
 
-    .logo {
-      color: white;
-      font-size: 1.4rem;
-      font-weight: bold;
-      text-transform: uppercase;
-      letter-spacing: 1px;
+    .logo{
+      color:white;
+      font-size:1.4rem;
+      font-weight:bold;
+      text-transform:uppercase;
+      letter-spacing:1px;
     }
 
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 25px;
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:25px;
     }
 
-    nav ul li a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-      transition: 0.3s;
+    nav ul li a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
     }
 
-    nav ul li a:hover {
-      color: #f58220;
+    nav ul li a:hover{
+      color:#f58220;
     }
 
-    /* HERO SECTION */
-
-    .hero {
-
+    .hero{
       background:
       linear-gradient(rgba(15,36,55,0.82), rgba(15,36,55,0.82)),
       url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80");
 
-      background-size: cover;
-      background-position: center;
-
-      padding: 110px 8%;
-
-      color: white;
+      background-size:cover;
+      background-position:center;
+      padding:110px 8%;
+      color:white;
     }
 
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 15px;
+    .hero h1{
+      font-size:3rem;
+      margin-bottom:15px;
     }
 
-    .hero p {
-      max-width: 850px;
-      font-size: 1.1rem;
-      color: #e3eaf0;
+    .hero p{
+      max-width:850px;
+      font-size:1.1rem;
+      color:#e3eaf0;
     }
 
-    /* MAIN SECTION */
-
-    section {
-      padding: 70px 8%;
+    section{
+      padding:70px 8%;
     }
 
-    .section-title {
-      font-size: 2rem;
-      color: #0f2437;
-
-      margin-bottom: 20px;
-
-      border-left: 6px solid #f58220;
-      padding-left: 15px;
+    .section-title{
+      font-size:2rem;
+      color:#0f2437;
+      margin-bottom:20px;
+      border-left:6px solid #f58220;
+      padding-left:15px;
     }
 
-    .intro {
-      max-width: 850px;
-      margin-bottom: 40px;
-      color: #52616b;
+    .intro{
+      max-width:850px;
+      margin-bottom:40px;
+      color:#52616b;
     }
 
-    /* ARTICLE CARDS */
-
-    .articles-container {
-      display: grid;
-      gap: 30px;
+    .articles-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+      gap:30px;
     }
 
-    .article-card {
-
-      background: white;
-
-      padding: 30px;
-
-      border-radius: 8px;
-
-      border-left: 6px solid #f58220;
-
-      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
-
-      transition: 0.3s;
+    .article-card{
+      background:white;
+      padding:30px;
+      border-radius:8px;
+      border-top:5px solid #f58220;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      transition:0.3s;
     }
 
-    .article-card:hover {
-      transform: translateY(-5px);
+    .article-card:hover{
+      transform:translateY(-5px);
     }
 
-    .article-card h2 {
-      color: #0f2437;
-      margin-bottom: 10px;
-      font-size: 1.5rem;
+    .article-card h2{
+      color:#0f2437;
+      margin-bottom:10px;
+      font-size:1.35rem;
     }
 
-    .date {
-      color: #f58220;
-      font-weight: bold;
-      display: block;
-      margin-bottom: 18px;
+    .date{
+      color:#f58220;
+      font-weight:bold;
+      display:block;
+      margin-bottom:15px;
     }
 
-    .summary-title {
-      color: #0f2437;
-      font-weight: bold;
-      margin-bottom: 10px;
+    .article-card p{
+      color:#52616b;
+      margin-bottom:15px;
     }
 
-    .article-card p {
-      color: #52616b;
-      margin-bottom: 18px;
+    footer{
+      background:#091622;
+      color:white;
+      text-align:center;
+      padding:30px 8%;
+      border-top:4px solid #f58220;
     }
 
-    .btn {
-
-      display: inline-block;
-
-      color: #f58220;
-
-      text-decoration: none;
-
-      font-weight: bold;
-
-      transition: 0.3s;
+    footer p{
+      color:#dbe3ea;
+      margin-bottom:8px;
     }
 
-    .btn:hover {
-      text-decoration: underline;
-    }
-
-    /* FOOTER */
-
-    footer {
-      background: #091622;
-      color: white;
-      text-align: center;
-      padding: 30px 8%;
-      border-top: 4px solid #f58220;
-    }
-
-    footer p {
-      color: #dbe3ea;
-      margin-bottom: 8px;
-    }
-
-    /* MOBILE */
-
-    @media (max-width: 768px) {
-
-      nav {
-        flex-direction: column;
-        gap: 15px;
+    @media(max-width:768px){
+      nav{
+        flex-direction:column;
+        gap:15px;
       }
 
-      nav ul {
-        flex-direction: column;
-        text-align: center;
+      nav ul{
+        flex-direction:column;
+        text-align:center;
       }
 
-      .hero h1 {
-        font-size: 2.3rem;
+      .hero h1{
+        font-size:2.3rem;
       }
-
     }
-
   </style>
 
 </head>
 
 <body>
 
-  <!-- NAVIGATION -->
-
   <nav>
-
-    <div class="logo">
-      Construction AI Portfolio
-    </div>
+    <div class="logo">Construction AI Portfolio</div>
 
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -232,213 +176,141 @@
       <li><a href="projects.html">Projects</a></li>
       <li><a href="weekly-articles.html">Weekly Articles</a></li>
     </ul>
-
   </nav>
 
-  <!-- HERO -->
-
   <header class="hero">
-
-    <h1>
-      Weekly Articles
-    </h1>
+    <h1>Weekly Articles</h1>
 
     <p>
-      This page includes weekly article summaries
-      related to artificial intelligence,
-      construction,
-      facilities management,
-      education,
-      technology,
-      and the future of work.
+      This page includes weekly digest topics completed throughout the course.
+      Each topic connects to artificial intelligence, construction, facilities management,
+      technology, policy, education, and the future of the AEC industry.
     </p>
-
   </header>
-
-  <!-- MAIN CONTENT -->
 
   <section>
 
-    <h2 class="section-title">
-      Weekly Article Summaries
-    </h2>
+    <h2 class="section-title">Weekly Digest Topics</h2>
 
     <p class="intro">
-      Each article summary highlights key ideas,
-      major takeaways,
-      and how the topic connects to AI
-      within construction and facilities management.
+      The following weekly article digests summarize current themes in artificial intelligence
+      and how they relate to construction, facilities management, education, policy,
+      and professional practice.
     </p>
 
     <div class="articles-container">
 
-      <!-- ARTICLE 1 -->
-
       <div class="article-card">
-
-        <h2>
-          Weekly Article 1: AI and the Construction Industry
-        </h2>
-
-        <span class="date">
-          Published Summary: Week 1
-        </span>
-
-        <p class="summary-title">
-          Summary
-        </p>
-
+        <h2>Week 2 Digest</h2>
+        <span class="date">No Specific Topic</span>
         <p>
-          This article discussed how artificial intelligence
-          is being used in the construction industry
-          to improve planning,
-          estimating,
-          scheduling,
-          safety,
-          documentation,
-          and project management.
+          This weekly digest introduced the course article review process and allowed for an open topic related to artificial intelligence.
         </p>
-
-        <p>
-          The article explained that AI can help construction teams
-          analyze large amounts of data
-          and make faster decisions across projects.
-        </p>
-
-        <a href="#" class="btn">
-          Read Full Article →
-        </a>
-
       </div>
 
-      <!-- ARTICLE 2 -->
-
       <div class="article-card">
-
-        <h2>
-          Weekly Article 2: AI in Higher Education
-        </h2>
-
-        <span class="date">
-          Published Summary: Week 2
-        </span>
-
-        <p class="summary-title">
-          Summary
-        </p>
-
+        <h2>Week 3 Digest</h2>
+        <span class="date">AGI</span>
         <p>
-          This article focused on how artificial intelligence
-          is impacting colleges,
-          students,
-          instructors,
-          and academic workflows.
+          This article summary focused on artificial general intelligence and its potential impact on technology, industries, and future work.
         </p>
-
-        <p>
-          The article discussed AI-assisted research,
-          writing support,
-          tutoring,
-          and the importance of responsible AI use.
-        </p>
-
-        <a href="#" class="btn">
-          Read Full Article →
-        </a>
-
       </div>
 
-      <!-- ARTICLE 3 -->
-
       <div class="article-card">
-
-        <h2>
-          Weekly Article 3: AI and Social Media
-        </h2>
-
-        <span class="date">
-          Published Summary: Week 3
-        </span>
-
-        <p class="summary-title">
-          Summary
-        </p>
-
+        <h2>Week 5 Digest</h2>
+        <span class="date">ASI</span>
         <p>
-          This article reviewed how artificial intelligence
-          is changing social media
-          through recommendation systems,
-          AI-generated content,
-          and automated communication.
+          This digest explored artificial superintelligence and the possible opportunities, concerns, and long-term effects of advanced AI systems.
         </p>
-
-        <p>
-          The article explained how AI impacts branding,
-          marketing,
-          communication,
-          and digital engagement.
-        </p>
-
-        <a href="#" class="btn">
-          Read Full Article →
-        </a>
-
       </div>
 
-      <!-- ARTICLE 4 -->
+      <div class="article-card">
+        <h2>Week 6 Digest</h2>
+        <span class="date">AI Apps and Tools for AEC/FM</span>
+        <p>
+          This article focused on AI applications and tools being used in architecture, engineering, construction, and facilities management.
+        </p>
+      </div>
 
       <div class="article-card">
-
-        <h2>
-          Weekly Article 4: AI, Automation & Future Workflows
-        </h2>
-
-        <span class="date">
-          Published Summary: Week 4
-        </span>
-
-        <p class="summary-title">
-          Summary
-        </p>
-
+        <h2>Week 7 Digest</h2>
+        <span class="date">BIM / Engineering Tools</span>
         <p>
-          This article discussed how automation
-          and artificial intelligence
-          are reshaping professional industries
-          by improving productivity
-          and reducing repetitive work.
+          This digest reviewed BIM and engineering-related tools and how technology can improve design, coordination, and project workflows.
         </p>
+      </div>
 
+      <div class="article-card">
+        <h2>Week 8 Digest</h2>
+        <span class="date">AI Agents</span>
         <p>
-          The article also emphasized that human leadership,
-          communication,
-          and decision-making
-          remain important within construction
-          and facilities management.
+          This article summary explored AI agents and how autonomous digital assistants may support professional workflows and decision-making.
         </p>
+      </div>
 
-        <a href="#" class="btn">
-          Read Full Article →
-        </a>
+      <div class="article-card">
+        <h2>Week 10 Digest</h2>
+        <span class="date">Vibe Coding</span>
+        <p>
+          This digest focused on vibe coding and how AI-assisted programming tools can help users create code, websites, and digital applications.
+        </p>
+      </div>
 
+      <div class="article-card">
+        <h2>Week 11 Digest</h2>
+        <span class="date">Societal AI Impact</span>
+        <p>
+          This article summary reviewed the broader social impact of artificial intelligence, including workforce changes, ethics, trust, and public adoption.
+        </p>
+      </div>
+
+      <div class="article-card">
+        <h2>Week 12 Digest</h2>
+        <span class="date">Government Policy & Rules</span>
+        <p>
+          This digest explored how government policy, rules, and regulations are shaping the development and responsible use of artificial intelligence.
+        </p>
+      </div>
+
+      <div class="article-card">
+        <h2>Week 13 Digest</h2>
+        <span class="date">Procurement and Supply Chain</span>
+        <p>
+          This article summary focused on how AI can affect procurement, supply chain management, purchasing decisions, and business operations.
+        </p>
+      </div>
+
+      <div class="article-card">
+        <h2>Week 14 Digest</h2>
+        <span class="date">Social Media and AI</span>
+        <p>
+          This digest reviewed how artificial intelligence is changing social media through algorithms, generated content, automation, and digital communication.
+        </p>
+      </div>
+
+      <div class="article-card">
+        <h2>Week 15 Digest</h2>
+        <span class="date">Higher Education</span>
+        <p>
+          This article summary focused on how AI is affecting higher education, including learning, writing, research, academic integrity, and student support.
+        </p>
+      </div>
+
+      <div class="article-card">
+        <h2>Week 16 Digest</h2>
+        <span class="date">AI Voices: Sutskever and Hassabis</span>
+        <p>
+          This digest explored viewpoints from major AI leaders and how their perspectives shape conversations around the future of artificial intelligence.
+        </p>
       </div>
 
     </div>
 
   </section>
 
-  <!-- FOOTER -->
-
   <footer>
-
-    <p>
-      © 2026 Construction AI Portfolio
-    </p>
-
-    <p>
-      Weekly Articles Page
-    </p>
-
+    <p>© 2026 Construction AI Portfolio</p>
+    <p>Weekly Articles Page</p>
   </footer>
 
 </body>
