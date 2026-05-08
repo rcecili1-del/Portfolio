@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Projects | Construction AI Portfolio</title>
 
   <style>
-
     *{
       margin:0;
       padding:0;
@@ -47,7 +46,6 @@
       color:white;
       text-decoration:none;
       font-weight:bold;
-      transition:0.3s;
     }
 
     nav a:hover{
@@ -58,11 +56,9 @@
       background:
       linear-gradient(rgba(15,36,55,0.82), rgba(15,36,55,0.82)),
       url("https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1600&q=80");
-
       background-size:cover;
       background-position:center;
-
-      padding:100px 8%;
+      padding:110px 8%;
       color:white;
     }
 
@@ -73,7 +69,7 @@
 
     .hero p{
       max-width:850px;
-      color:#e4eaf0;
+      color:#e3eaf0;
       font-size:1.1rem;
     }
 
@@ -90,9 +86,9 @@
     }
 
     .intro{
-      color:#52616b;
       max-width:850px;
       margin-bottom:40px;
+      color:#52616b;
     }
 
     .projects-grid{
@@ -107,17 +103,12 @@
       border-radius:8px;
       border-top:5px solid #f58220;
       box-shadow:0 6px 18px rgba(0,0,0,0.08);
-      transition:0.3s;
-    }
-
-    .project-card:hover{
-      transform:translateY(-5px);
     }
 
     .project-card h2{
       color:#0f2437;
       margin-bottom:15px;
-      font-size:1.4rem;
+      font-size:1.5rem;
     }
 
     .project-card p{
@@ -129,7 +120,7 @@
       display:flex;
       flex-wrap:wrap;
       gap:10px;
-      margin-bottom:20px;
+      margin-top:15px;
     }
 
     .tag{
@@ -141,18 +132,6 @@
       font-weight:bold;
     }
 
-    .btn{
-      display:inline-block;
-      color:#f58220;
-      font-weight:bold;
-      text-decoration:none;
-      transition:0.3s;
-    }
-
-    .btn:hover{
-      text-decoration:underline;
-    }
-
     footer{
       background:#091622;
       color:white;
@@ -162,12 +141,11 @@
     }
 
     footer p{
-      margin-bottom:8px;
       color:#dbe3ea;
+      margin-bottom:8px;
     }
 
     @media(max-width:768px){
-
       nav{
         flex-direction:column;
         gap:15px;
@@ -181,19 +159,14 @@
       .hero h1{
         font-size:2.3rem;
       }
-
     }
-
   </style>
 </head>
 
 <body>
 
   <nav>
-
-    <div class="logo">
-      Construction AI Portfolio
-    </div>
+    <div class="logo">Construction AI Portfolio</div>
 
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -201,154 +174,93 @@
       <li><a href="projects.html">Projects</a></li>
       <li><a href="weekly-articles.html">Weekly Articles</a></li>
     </ul>
-
   </nav>
 
   <header class="hero">
-
-    <h1>Projects</h1>
+    <h1>Semester Projects</h1>
 
     <p>
-      This page highlights the major assignments,
-      research projects, and semester work completed
+      This page highlights the major projects and assignments completed
       throughout the AI in Construction and Facilities Management course.
     </p>
-
   </header>
 
   <section>
-
-    <h2 class="section-title">
-      Semester Projects
-    </h2>
+    <h2 class="section-title">Completed Projects</h2>
 
     <p class="intro">
-      The following projects demonstrate how artificial intelligence,
-      BIM/VDC technology, and digital workflows are impacting
-      construction and facilities management.
+      The following projects show how artificial intelligence can be applied
+      to construction, estimating, project management, and facilities management.
     </p>
 
     <div class="projects-grid">
 
       <div class="project-card">
-
-        <h2>
-          AI in Construction Research
-        </h2>
+        <h2>Togal.AI</h2>
 
         <p>
-          This research project explored how artificial intelligence
-          is being used in the construction industry
-          to improve estimating, scheduling,
-          documentation, coordination,
-          and project management workflows.
+          This project focused on Togal.AI and how artificial intelligence
+          can be used to support construction takeoffs and estimating.
+        </p>
+
+        <p>
+          The assignment explored how AI tools can help reduce manual work,
+          improve speed, and support more efficient preconstruction workflows.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Togal.AI</span>
+          <span class="tag">Takeoff</span>
+          <span class="tag">Estimating</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>Estimating with AI</h2>
+
+        <p>
+          This project examined how artificial intelligence can assist with
+          estimating, cost analysis, quantity review, and construction planning.
+        </p>
+
+        <p>
+          The assignment helped connect AI tools to real estimating tasks
+          used in the construction industry.
         </p>
 
         <div class="tags">
           <span class="tag">AI</span>
+          <span class="tag">Estimating</span>
+          <span class="tag">Cost Analysis</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <h2>Final Project</h2>
+
+        <p>
+          The final project brought together the main course concepts related
+          to artificial intelligence, construction technology, and facilities management.
+        </p>
+
+        <p>
+          This project demonstrated how AI may influence future construction
+          workflows, decision-making, documentation, and project delivery.
+        </p>
+
+        <div class="tags">
+          <span class="tag">Final Project</span>
+          <span class="tag">AI</span>
           <span class="tag">Construction</span>
-          <span class="tag">Research</span>
         </div>
-
-        <a href="#" class="btn">
-          View Project →
-        </a>
-
-      </div>
-
-      <div class="project-card">
-
-        <h2>
-          BIM & VDC Technology Project
-        </h2>
-
-        <p>
-          This assignment focused on BIM and VDC workflows,
-          including model coordination,
-          clash detection,
-          digital construction planning,
-          and collaboration between project teams.
-        </p>
-
-        <div class="tags">
-          <span class="tag">BIM</span>
-          <span class="tag">VDC</span>
-          <span class="tag">Coordination</span>
-        </div>
-
-        <a href="#" class="btn">
-          View Project →
-        </a>
-
-      </div>
-
-      <div class="project-card">
-
-        <h2>
-          AI Industry Interview
-        </h2>
-
-        <p>
-          This project included industry insight
-          into how AI tools are currently being used
-          by construction professionals
-          to streamline workflows,
-          improve communication,
-          and support project delivery.
-        </p>
-
-        <div class="tags">
-          <span class="tag">Interview</span>
-          <span class="tag">Industry</span>
-          <span class="tag">AI Tools</span>
-        </div>
-
-        <a href="#" class="btn">
-          View Project →
-        </a>
-
-      </div>
-
-      <div class="project-card">
-
-        <h2>
-          Portfolio Website Project
-        </h2>
-
-        <p>
-          This website serves as the final course portfolio,
-          organizing projects,
-          article summaries,
-          and semester work into a professional online format
-          hosted through GitHub Pages.
-        </p>
-
-        <div class="tags">
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-          <span class="tag">GitHub</span>
-        </div>
-
-        <a href="#" class="btn">
-          View Project →
-        </a>
-
       </div>
 
     </div>
-
   </section>
 
   <footer>
-
-    <p>
-      © 2026 Construction AI Portfolio
-    </p>
-
-    <p>
-      Projects Page
-    </p>
-
+    <p>© 2026 Construction AI Portfolio</p>
+    <p>Projects Page</p>
   </footer>
 
 </body>
