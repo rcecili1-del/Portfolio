@@ -1,64 +1,316 @@
-tion AI Portfolio</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About Me | Construction AI Portfolio</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f4f1ec;
+      color:#1d1d1d;
+      line-height:1.6;
+    }
+
+    nav{
+      background:#0f2437;
+      border-bottom:4px solid #f58220;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:white;
+      font-size:1.4rem;
+      font-weight:bold;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:25px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#f58220;
+    }
+
+    .hero{
+      background:
+      linear-gradient(rgba(15,36,55,0.82), rgba(15,36,55,0.82)),
+      url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80");
+
+      background-size:cover;
+      background-position:center;
+
+      padding:100px 8%;
+      color:white;
+    }
+
+    .hero h1{
+      font-size:3rem;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      max-width:800px;
+      color:#e4eaf0;
+      font-size:1.1rem;
+    }
+
+    section{
+      padding:70px 8%;
+    }
+
+    .section-title{
+      font-size:2rem;
+      color:#0f2437;
+      margin-bottom:25px;
+      border-left:6px solid #f58220;
+      padding-left:15px;
+    }
+
+    .about-container{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:30px;
+    }
+
+    .card{
+      background:white;
+      padding:30px;
+      border-radius:8px;
+      border-top:5px solid #f58220;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .card h2{
+      color:#0f2437;
+      margin-bottom:15px;
+    }
+
+    .card p{
+      color:#52616b;
+      margin-bottom:15px;
+    }
+
+    .skills{
+      margin-top:15px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .tag{
+      background:#d9e2e8;
+      color:#0f2437;
+      padding:8px 14px;
+      border-radius:20px;
+      font-size:0.85rem;
+      font-weight:bold;
+    }
+
+    footer{
+      background:#091622;
+      color:white;
+      text-align:center;
+      padding:30px 8%;
+      border-top:4px solid #f58220;
+    }
+
+    footer p{
+      margin-bottom:8px;
+      color:#dbe3ea;
+    }
+
+    @media(max-width:900px){
+
+      .about-container{
+        grid-template-columns:1fr;
+      }
+
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero h1{
+        font-size:2.3rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+
+    <div class="logo">
+      Construction AI Portfolio
+    </div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="weekly-articles.html">Weekly Articles</a></li>
     </ul>
+
   </nav>
 
-  <header class="page-header">
+  <header class="hero">
+
     <h1>About Me</h1>
+
     <p>
-      This page introduces my background, professional interests, and focus in construction technology, BIM/VDC, artificial intelligence, and facilities management.
+      This page introduces my background,
+      professional interests, and focus
+      in construction technology,
+      BIM/VDC workflows, artificial intelligence,
+      and facilities management.
     </p>
+
   </header>
 
   <section>
-    <h2 class="section-title">Professional Background</h2>
 
-    <div class="content-box">
-      <h3>Who I Am</h3>
-      <p>
-        I am a student and construction technology professional with an interest in how digital tools can improve the planning, coordination, and management of construction projects. My academic and professional focus includes construction, facilities management, BIM, VDC, and emerging technology.
-      </p>
-      <p>
-        This portfolio was created for my AI in Construction and Facilities Management course. It highlights the assignments, article summaries, and projects completed throughout the semester.
-      </p>
-    </div>
+    <h2 class="section-title">
+      Professional Background
+    </h2>
 
-    <div class="content-box">
-      <h3>Professional Interests</h3>
-      <p>
-        My main interests include BIM coordination, construction project delivery, model-based workflows, digital documentation, and the use of artificial intelligence to support decision-making in the built environment.
-      </p>
-      <p>
-        I am especially interested in how AI can support construction teams by improving communication, reducing repetitive tasks, analyzing project data, and helping owners manage buildings more effectively after construction.
-      </p>
-    </div>
+    <div class="about-container">
 
-    <div class="content-box">
-      <h3>Skills and Focus Areas</h3>
-      <p>
-        The skills highlighted in this portfolio connect construction knowledge with technology-based problem solving.
-      </p>
-      <div class="skills">
-        <span class="tag">BIM</span>
-        <span class="tag">VDC</span>
-        <span class="tag">Construction Technology</span>
-        <span class="tag">Facilities Management</span>
-        <span class="tag">Artificial Intelligence</span>
-        <span class="tag">Project Coordination</span>
-        <span class="tag">Digital Delivery</span>
+      <div class="card">
+
+        <h2>Who I Am</h2>
+
+        <p>
+          I am a student and construction technology professional
+          with an interest in how digital tools can improve
+          planning, coordination, and project delivery
+          within the construction industry.
+        </p>
+
+        <p>
+          This portfolio was created for my
+          AI in Construction and Facilities Management course
+          and highlights projects, article summaries,
+          and research completed throughout the semester.
+        </p>
+
       </div>
+
+      <div class="card">
+
+        <h2>Professional Interests</h2>
+
+        <p>
+          My interests include BIM coordination,
+          VDC workflows, construction technology,
+          project management, and the use of AI
+          to improve efficiency and communication.
+        </p>
+
+        <p>
+          I am especially interested in how artificial intelligence
+          can support construction teams through automation,
+          data analysis, scheduling assistance,
+          and digital project delivery.
+        </p>
+
+      </div>
+
+      <div class="card">
+
+        <h2>Skills & Focus Areas</h2>
+
+        <p>
+          The following topics represent the main focus areas
+          highlighted throughout this course and portfolio.
+        </p>
+
+        <div class="skills">
+
+          <span class="tag">BIM</span>
+          <span class="tag">VDC</span>
+          <span class="tag">AI</span>
+          <span class="tag">Construction Technology</span>
+          <span class="tag">Facilities Management</span>
+          <span class="tag">Project Coordination</span>
+          <span class="tag">Digital Delivery</span>
+
+        </div>
+
+      </div>
+
+      <div class="card">
+
+        <h2>Course Connection</h2>
+
+        <p>
+          Throughout this course,
+          I explored how artificial intelligence
+          is impacting construction,
+          facilities management,
+          higher education,
+          and digital communication.
+        </p>
+
+        <p>
+          The assignments completed during the semester
+          helped strengthen my understanding
+          of emerging technology trends
+          and how AI may influence
+          the future of the construction industry.
+        </p>
+
+      </div>
+
     </div>
 
-    <div class="content-box">
-      <h3>Course Connection</h3>
-      <p>
-        In this course, I reviewed how AI is being used across construction and facilities management. The course helped me better understand how AI tools can support estimating, scheduling, project management, documentation, safety, operations, and long-term facility performance.
-      </p>
-    </div>
   </section>
 
   <footer>
-    <p>&copy; 2026 Construction AI Portfolio</p>
-    <p>About Me Page</p>
+
+    <p>
+      © 2026 Construction AI Portfolio
+    </p>
+
+    <p>
+      About Me Page
+    </p>
+
   </footer>
+
 </body>
 </html>
