@@ -1,80 +1,397 @@
 <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weekly Articles | Construction AI Portfolio</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family: Arial, Helvetica, sans-serif;
+      background:#f4f1ec;
+      color:#1d1d1d;
+      line-height:1.6;
+    }
+
+    nav{
+      background:#0f2437;
+      border-bottom:4px solid #f58220;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:white;
+      font-size:1.4rem;
+      font-weight:bold;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:25px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:#f58220;
+    }
+
+    .hero{
+      background:
+      linear-gradient(rgba(15,36,55,0.82), rgba(15,36,55,0.82)),
+      url("https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1600&q=80");
+
+      background-size:cover;
+      background-position:center;
+
+      padding:100px 8%;
+      color:white;
+    }
+
+    .hero h1{
+      font-size:3rem;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      max-width:850px;
+      color:#e4eaf0;
+      font-size:1.1rem;
+    }
+
+    section{
+      padding:70px 8%;
+    }
+
+    .section-title{
+      font-size:2rem;
+      color:#0f2437;
+      margin-bottom:20px;
+      border-left:6px solid #f58220;
+      padding-left:15px;
+    }
+
+    .intro{
+      color:#52616b;
+      max-width:850px;
+      margin-bottom:40px;
+    }
+
+    .articles-container{
+      display:grid;
+      gap:30px;
+    }
+
+    .article-card{
+      background:white;
+      padding:30px;
+      border-radius:8px;
+      border-left:6px solid #f58220;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+      transition:0.3s;
+    }
+
+    .article-card:hover{
+      transform:translateY(-5px);
+    }
+
+    .article-card h2{
+      color:#0f2437;
+      margin-bottom:10px;
+      font-size:1.5rem;
+    }
+
+    .date{
+      color:#f58220;
+      font-weight:bold;
+      margin-bottom:18px;
+      display:block;
+    }
+
+    .article-card p{
+      color:#52616b;
+      margin-bottom:18px;
+    }
+
+    .summary-title{
+      color:#0f2437;
+      font-weight:bold;
+      margin-bottom:8px;
+    }
+
+    .btn{
+      display:inline-block;
+      color:#f58220;
+      font-weight:bold;
+      text-decoration:none;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      text-decoration:underline;
+    }
+
+    footer{
+      background:#091622;
+      color:white;
+      text-align:center;
+      padding:30px 8%;
+      border-top:4px solid #f58220;
+    }
+
+    footer p{
+      margin-bottom:8px;
+      color:#dbe3ea;
+    }
+
+    @media(max-width:768px){
+
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero h1{
+        font-size:2.3rem;
+      }
+
+    }
+
+  </style>
+</head>
+
+<body>
+
   <nav>
-    <div class="logo">Construction AI Portfolio</div>
+
+    <div class="logo">
+      Construction AI Portfolio
+    </div>
+
     <ul>
       <li><a href="index.html">Home</a></li>
       <li><a href="about.html">About Me</a></li>
       <li><a href="projects.html">Projects</a></li>
       <li><a href="weekly-articles.html">Weekly Articles</a></li>
     </ul>
+
   </nav>
 
-  <header class="page-header">
+  <header class="hero">
+
     <h1>Weekly Articles</h1>
+
     <p>
-      This page includes weekly article summaries completed for the course. Each article connects to artificial intelligence, construction, facilities management, education, technology, or the future of work.
+      This page includes weekly article summaries
+      related to artificial intelligence,
+      construction,
+      facilities management,
+      higher education,
+      technology,
+      and the future of work.
     </p>
+
   </header>
 
   <section>
-    <div class="article-list">
-      <article class="article-card">
-        <h2>Weekly Article 1: AI and the Construction Industry</h2>
-        <span class="date">Published Summary: Week 1</span>
-        <p class="summary-title">Summary of Article</p>
-        <p>
-          This article discussed how artificial intelligence is being used in the construction industry to improve planning, estimating, scheduling, safety, documentation, and project management. The article showed that AI can help construction teams analyze large amounts of data and make faster decisions.
-        </p>
-        <p>
-          The article connects to this course because it demonstrates how AI is moving from a future concept into practical construction workflows. It also shows that construction professionals need to understand both the benefits and limitations of AI tools.
-        </p>
-        <a href="#" class="btn">Read Full Article Summary</a>
-      </article>
 
-      <article class="article-card">
-        <h2>Weekly Article 2: AI in Higher Education</h2>
-        <span class="date">Published Summary: Week 2</span>
-        <p class="summary-title">Summary of Article</p>
-        <p>
-          This article focused on the role of AI in higher education. It discussed how students, instructors, and universities are responding to AI tools that can assist with research, writing, tutoring, and productivity.
-        </p>
-        <p>
-          The article connects to this course because AI is changing the way students learn and complete assignments. It also raises questions about responsible AI use, academic integrity, and how future professionals should develop AI literacy.
-        </p>
-        <a href="#" class="btn">Read Full Article Summary</a>
-      </article>
+    <h2 class="section-title">
+      Weekly Article Summaries
+    </h2>
 
-      <article class="article-card">
-        <h2>Weekly Article 3: AI and Social Media</h2>
-        <span class="date">Published Summary: Week 3</span>
-        <p class="summary-title">Summary of Article</p>
-        <p>
-          This article reviewed how artificial intelligence is changing social media through recommendation algorithms, AI-generated content, automated posts, and digital communication tools.
-        </p>
-        <p>
-          The article connects to this course because social media affects how companies communicate, market services, share project updates, and manage professional brands. AI-generated content also creates challenges related to trust, quality, and authenticity.
-        </p>
-        <a href="#" class="btn">Read Full Article Summary</a>
-      </article>
+    <p class="intro">
+      Each article summary highlights key ideas,
+      major takeaways,
+      and how the topic connects
+      to artificial intelligence
+      within the construction and facilities management industry.
+    </p>
 
-      <article class="article-card">
-        <h2>Weekly Article 4: AI, Automation, and the Future of Work</h2>
-        <span class="date">Published Summary: Week 4</span>
-        <p class="summary-title">Summary of Article</p>
-        <p>
-          This article discussed how AI and automation are changing the workplace. It explained that AI can improve productivity by completing repetitive tasks, but it also requires workers to adapt and learn new digital skills.
+    <div class="articles-container">
+
+      <div class="article-card">
+
+        <h2>
+          AI and the Construction Industry
+        </h2>
+
+        <span class="date">
+          Week 1 Article Summary
+        </span>
+
+        <p class="summary-title">
+          Summary
         </p>
+
         <p>
-          The article connects to construction and facilities management because many industry tasks involve documentation, coordination, scheduling, and data review. AI can support these tasks, but human judgment is still needed for final decisions.
+          This article discussed how artificial intelligence
+          is improving construction workflows through automation,
+          scheduling assistance,
+          estimating,
+          documentation,
+          and project management tools.
         </p>
-        <a href="#" class="btn">Read Full Article Summary</a>
-      </article>
+
+        <p>
+          The article explained that AI can help construction teams
+          make faster decisions,
+          analyze large amounts of project data,
+          and improve efficiency across projects.
+        </p>
+
+        <a href="#" class="btn">
+          Read More →
+        </a>
+
+      </div>
+
+      <div class="article-card">
+
+        <h2>
+          AI in Higher Education
+        </h2>
+
+        <span class="date">
+          Week 2 Article Summary
+        </span>
+
+        <p class="summary-title">
+          Summary
+        </p>
+
+        <p>
+          This article focused on how artificial intelligence
+          is impacting colleges,
+          instructors,
+          and students through AI-assisted research,
+          tutoring,
+          writing support,
+          and digital learning tools.
+        </p>
+
+        <p>
+          The article also discussed concerns related to academic integrity,
+          responsible AI use,
+          and how future professionals
+          should develop AI literacy skills.
+        </p>
+
+        <a href="#" class="btn">
+          Read More →
+        </a>
+
+      </div>
+
+      <div class="article-card">
+
+        <h2>
+          AI and Social Media
+        </h2>
+
+        <span class="date">
+          Week 3 Article Summary
+        </span>
+
+        <p class="summary-title">
+          Summary
+        </p>
+
+        <p>
+          This article explored how artificial intelligence
+          is influencing social media platforms
+          through recommendation algorithms,
+          automated content,
+          and AI-generated media.
+        </p>
+
+        <p>
+          The article highlighted how AI is changing communication,
+          marketing,
+          branding,
+          and online engagement
+          across both personal and professional environments.
+        </p>
+
+        <a href="#" class="btn">
+          Read More →
+        </a>
+
+      </div>
+
+      <div class="article-card">
+
+        <h2>
+          AI, Automation & the Future of Work
+        </h2>
+
+        <span class="date">
+          Week 4 Article Summary
+        </span>
+
+        <p class="summary-title">
+          Summary
+        </p>
+
+        <p>
+          This article discussed how AI and automation
+          are reshaping industries
+          by improving productivity
+          and reducing repetitive tasks.
+        </p>
+
+        <p>
+          The article explained that while AI can support workflows,
+          human judgment,
+          leadership,
+          and communication skills
+          remain essential within professional industries
+          like construction and facilities management.
+        </p>
+
+        <a href="#" class="btn">
+          Read More →
+        </a>
+
+      </div>
+
     </div>
+
   </section>
 
   <footer>
-    <p>&copy; 2026 Construction AI Portfolio</p>
-    <p>Weekly Articles Page</p>
+
+    <p>
+      © 2026 Construction AI Portfolio
+    </p>
+
+    <p>
+      Weekly Articles Page
+    </p>
+
   </footer>
+
 </body>
 </html>
