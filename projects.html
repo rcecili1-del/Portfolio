@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>Projects | Construction AI Portfolio</title>
 
   <style>
+
     *{
       margin:0;
       padding:0;
@@ -19,10 +22,14 @@
       line-height:1.6;
     }
 
+    /* NAVBAR */
+
     nav{
       background:#0f2437;
       border-bottom:4px solid #f58220;
+
       padding:20px 8%;
+
       display:flex;
       justify-content:space-between;
       align-items:center;
@@ -42,23 +49,30 @@
       gap:25px;
     }
 
-    nav a{
+    nav ul li a{
       color:white;
       text-decoration:none;
       font-weight:bold;
+      transition:0.3s;
     }
 
-    nav a:hover{
+    nav ul li a:hover{
       color:#f58220;
     }
 
+    /* HERO */
+
     .hero{
+
       background:
       linear-gradient(rgba(15,36,55,0.82), rgba(15,36,55,0.82)),
       url("https://images.unsplash.com/photo-1581094288338-2314dddb7ece?auto=format&fit=crop&w=1600&q=80");
+
       background-size:cover;
       background-position:center;
+
       padding:110px 8%;
+
       color:white;
     }
 
@@ -73,6 +87,8 @@
       font-size:1.1rem;
     }
 
+    /* MAIN SECTION */
+
     section{
       padding:70px 8%;
     }
@@ -80,7 +96,9 @@
     .section-title{
       font-size:2rem;
       color:#0f2437;
+
       margin-bottom:20px;
+
       border-left:6px solid #f58220;
       padding-left:15px;
     }
@@ -91,6 +109,8 @@
       color:#52616b;
     }
 
+    /* PROJECT GRID */
+
     .projects-grid{
       display:grid;
       grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
@@ -98,11 +118,22 @@
     }
 
     .project-card{
+
       background:white;
+
       padding:30px;
+
       border-radius:8px;
+
       border-top:5px solid #f58220;
+
       box-shadow:0 6px 18px rgba(0,0,0,0.08);
+
+      transition:0.3s;
+    }
+
+    .project-card:hover{
+      transform:translateY(-5px);
     }
 
     .project-card h2{
@@ -126,11 +157,16 @@
     .tag{
       background:#d9e2e8;
       color:#0f2437;
+
       padding:7px 12px;
+
       border-radius:20px;
+
       font-size:0.8rem;
       font-weight:bold;
     }
+
+    /* FOOTER */
 
     footer{
       background:#091622;
@@ -145,7 +181,10 @@
       margin-bottom:8px;
     }
 
+    /* MOBILE */
+
     @media(max-width:768px){
+
       nav{
         flex-direction:column;
         gap:15px;
@@ -159,14 +198,22 @@
       .hero h1{
         font-size:2.3rem;
       }
+
     }
+
   </style>
+
 </head>
 
 <body>
 
+  <!-- NAVIGATION -->
+
   <nav>
-    <div class="logo">Construction AI Portfolio</div>
+
+    <div class="logo">
+      Construction AI Portfolio
+    </div>
 
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -174,38 +221,64 @@
       <li><a href="projects.html">Projects</a></li>
       <li><a href="weekly-articles.html">Weekly Articles</a></li>
     </ul>
+
   </nav>
 
+  <!-- HERO -->
+
   <header class="hero">
-    <h1>Semester Projects</h1>
+
+    <h1>
+      Semester Projects
+    </h1>
 
     <p>
-      This page highlights the major projects and assignments completed
-      throughout the AI in Construction and Facilities Management course.
+      This page highlights the projects and assignments
+      completed throughout the AI in Construction
+      and Facilities Management course.
     </p>
+
   </header>
 
+  <!-- PROJECTS SECTION -->
+
   <section>
-    <h2 class="section-title">Completed Projects</h2>
+
+    <h2 class="section-title">
+      Completed Projects
+    </h2>
 
     <p class="intro">
-      The following projects show how artificial intelligence can be applied
-      to construction, estimating, project management, and facilities management.
+      The following projects explore how artificial intelligence
+      and digital tools can support construction workflows,
+      estimating,
+      project management,
+      and facilities management.
     </p>
 
     <div class="projects-grid">
 
+      <!-- PROJECT 1 -->
+
       <div class="project-card">
-        <h2>Togal.AI</h2>
+
+        <h2>
+          Togal.AI
+        </h2>
 
         <p>
-          This project focused on Togal.AI and how artificial intelligence
-          can be used to support construction takeoffs and estimating.
+          This project explored Togal.AI
+          and how artificial intelligence
+          can automate quantity takeoffs
+          and support estimating workflows
+          within construction projects.
         </p>
 
         <p>
-          The assignment explored how AI tools can help reduce manual work,
-          improve speed, and support more efficient preconstruction workflows.
+          The assignment focused on how AI-powered tools
+          can improve estimating speed,
+          accuracy,
+          and productivity.
         </p>
 
         <div class="tags">
@@ -213,19 +286,30 @@
           <span class="tag">Takeoff</span>
           <span class="tag">Estimating</span>
         </div>
+
       </div>
 
+      <!-- PROJECT 2 -->
+
       <div class="project-card">
-        <h2>Estimating with AI</h2>
+
+        <h2>
+          Estimating with AI
+        </h2>
 
         <p>
-          This project examined how artificial intelligence can assist with
-          estimating, cost analysis, quantity review, and construction planning.
+          This assignment focused on how artificial intelligence
+          can support estimating workflows
+          through automation,
+          data review,
+          and improved cost analysis.
         </p>
 
         <p>
-          The assignment helped connect AI tools to real estimating tasks
-          used in the construction industry.
+          The project explored the benefits
+          and limitations
+          of using AI tools
+          within construction estimating processes.
         </p>
 
         <div class="tags">
@@ -233,34 +317,59 @@
           <span class="tag">Estimating</span>
           <span class="tag">Cost Analysis</span>
         </div>
+
       </div>
 
+      <!-- PROJECT 3 -->
+
       <div class="project-card">
-        <h2>Final Project</h2>
+
+        <h2>
+          Final Project
+        </h2>
 
         <p>
-          The final project brought together the main course concepts related
-          to artificial intelligence, construction technology, and facilities management.
+          The final project focused on interviewing professionals
+          within the AEC industry
+          to better understand
+          how firms are adopting artificial intelligence
+          into their workflows and operations.
         </p>
 
         <p>
-          This project demonstrated how AI may influence future construction
-          workflows, decision-making, documentation, and project delivery.
+          The project explored how AI is being used
+          for project management,
+          estimating,
+          coordination,
+          communication,
+          and improving efficiency
+          across construction and design firms.
         </p>
 
         <div class="tags">
-          <span class="tag">Final Project</span>
-          <span class="tag">AI</span>
-          <span class="tag">Construction</span>
+          <span class="tag">AEC Industry</span>
+          <span class="tag">AI Adoption</span>
+          <span class="tag">Professional Interviews</span>
         </div>
+
       </div>
 
     </div>
+
   </section>
 
+  <!-- FOOTER -->
+
   <footer>
-    <p>© 2026 Construction AI Portfolio</p>
-    <p>Projects Page</p>
+
+    <p>
+      © 2026 Construction AI Portfolio
+    </p>
+
+    <p>
+      Projects Page
+    </p>
+
   </footer>
 
 </body>
