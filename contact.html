@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Construction AI Portfolio</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      font-family:Arial, Helvetica, sans-serif;
+      background:#f4f1ec;
+      color:#1d1d1d;
+      line-height:1.7;
+    }
+
+    nav{
+      background:#0f2437;
+      border-bottom:4px solid #f58220;
+      padding:20px 8%;
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+    }
+
+    .logo{
+      color:white;
+      font-size:1.4rem;
+      font-weight:bold;
+      text-transform:uppercase;
+      letter-spacing:1px;
+    }
+
+    nav ul{
+      list-style:none;
+      display:flex;
+      gap:25px;
+    }
+
+    nav a{
+      color:white;
+      text-decoration:none;
+      font-weight:bold;
+    }
+
+    nav a:hover{
+      color:#f58220;
+    }
+
+    .hero{
+      background:
+      linear-gradient(rgba(15,36,55,0.82), rgba(15,36,55,0.82)),
+      url("https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1600&q=80");
+      background-size:cover;
+      background-position:center;
+      padding:110px 8%;
+      color:white;
+      text-align:center;
+    }
+
+    .hero h1{
+      font-size:3rem;
+      margin-bottom:15px;
+    }
+
+    .hero p{
+      max-width:850px;
+      margin:auto;
+      color:#e3eaf0;
+      font-size:1.1rem;
+    }
+
+    section{
+      padding:70px 8%;
+    }
+
+    .section-title{
+      font-size:2rem;
+      color:#0f2437;
+      margin-bottom:30px;
+      border-left:6px solid #f58220;
+      padding-left:15px;
+    }
+
+    .contact-container{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:40px;
+    }
+
+    .contact-card{
+      background:white;
+      padding:35px;
+      border-radius:10px;
+      border-top:5px solid #f58220;
+      box-shadow:0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    .contact-card h2{
+      color:#0f2437;
+      margin-bottom:20px;
+    }
+
+    .contact-card p{
+      color:#52616b;
+      margin-bottom:18px;
+    }
+
+    .contact-info p{
+      font-weight:bold;
+      color:#0f2437;
+      margin-bottom:18px;
+    }
+
+    .contact-info a{
+      color:#52616b;
+      text-decoration:none;
+      font-weight:normal;
+    }
+
+    .contact-info a:hover{
+      color:#f58220;
+    }
+
+    .connect-btn{
+      display:inline-block;
+      background:#f58220;
+      color:white;
+      padding:14px 24px;
+      border-radius:6px;
+      text-decoration:none;
+      font-weight:bold;
+      margin-top:10px;
+    }
+
+    .connect-btn:hover{
+      background:#d86c12;
+    }
+
+    footer{
+      background:#091622;
+      color:white;
+      text-align:center;
+      padding:30px 8%;
+      border-top:4px solid #f58220;
+    }
+
+    footer p{
+      color:#dbe3ea;
+      margin-bottom:8px;
+    }
+
+    @media(max-width:900px){
+      .contact-container{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media(max-width:768px){
+      nav{
+        flex-direction:column;
+        gap:15px;
+      }
+
+      nav ul{
+        flex-direction:column;
+        text-align:center;
+      }
+
+      .hero h1{
+        font-size:2.3rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <div class="logo">Construction AI Portfolio</div>
+
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About Me</a></li>
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="weekly-articles.html">Weekly Articles</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h1>Contact & Connect</h1>
+
+    <p>
+      Thank you for visiting my Construction AI Portfolio.
+      Feel free to connect regarding BIM/VDC,
+      construction technology, AI in AEC/FM,
+      or professional collaboration opportunities.
+    </p>
+  </header>
+
+  <section>
+    <h2 class="section-title">Connect With Me</h2>
+
+    <div class="contact-container">
+
+      <div class="contact-card">
+        <h2>Contact Information</h2>
+
+        <p>
+          I am always interested in connecting with professionals,
+          students, and industry leaders related to BIM/VDC,
+          artificial intelligence, construction technology,
+          and digital project delivery.
+        </p>
+
+        <div class="contact-info">
+          <p>
+            Email:<br>
+            <a href="mailto:rcecili1@uncc.edu">rcecili1@uncc.edu</a>
+          </p>
+
+          <p>
+            LinkedIn:<br>
+            <a href="https://www.linkedin.com/in/roberto-campos-/" target="_blank">
+              linkedin.com/in/roberto-campos-
+            </a>
+          </p>
+
+          <p>
+            Location:<br>
+            <span style="font-weight:normal; color:#52616b;">
+              North Carolina, USA
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <div class="contact-card">
+        <h2>Professional Connection</h2>
+
+        <p>
+          My interests focus on BIM/VDC workflows,
+          construction technology, artificial intelligence,
+          digital coordination, and data-driven project delivery
+          within the AEC industry.
+        </p>
+
+        <p>
+          I enjoy connecting with professionals involved in
+          construction innovation, facilities management,
+          MEP coordination, and emerging AI technologies.
+        </p>
+
+        <a
+          href="https://www.linkedin.com/in/roberto-campos-/"
+          target="_blank"
+          class="connect-btn">
+          Connect on LinkedIn
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 Construction AI Portfolio</p>
+    <p>Contact Page</p>
+  </footer>
+
+</body>
+</html>
